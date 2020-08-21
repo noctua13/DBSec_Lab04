@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSVNhom_Public" Class="DbQLSVNhomDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=HP-PC\SQLEXPRESS;Initial Catalog=QLSVNhom_Public;Integrated Security=True" SettingsObjectName="DBSecurity_Lab04_Public.Properties.Settings" SettingsPropertyName="QLSVNhom_PublicConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SINHVIEN" Member="SINHVIENs">
+    <Type Name="SINHVIEN">
+      <Column Name="MASV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NGAYSINH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DIACHI" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MALOP" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TENDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MATKHAU" Type="System.Data.Linq.Binary" DbType="VarBinary(8000) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BANGDIEM" Member="BANGDIEMs">
+    <Type Name="BANGDIEM">
+      <Column Name="MASV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAHP" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DIEMTHI" Type="System.Data.Linq.Binary" DbType="VarBinary(8000)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOCPHAN" Member="HOCPHANs">
+    <Type Name="HOCPHAN">
+      <Column Name="MAHP" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENHP" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SOTC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOP" Member="LOPs">
+    <Type Name="LOP">
+      <Column Name="MALOP" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENLOP" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MANV" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="MANV" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LUONG" Type="System.Data.Linq.Binary" DbType="VarBinary(8000)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TENDN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MATKHAU" Type="System.Data.Linq.Binary" DbType="VarBinary(8000) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PUBKEY" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_INS_PUBLIC_ENCRYPT_NHANVIEN" Method="SP_INS_PUBLIC_ENCRYPT_NHANVIEN">
+    <Parameter Name="manv" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="hoten" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="luong" Type="System.Data.Linq.Binary" DbType="VarBinary(8000)" />
+    <Parameter Name="tendn" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="matkhau" Type="System.Data.Linq.Binary" DbType="VarBinary(8000)" />
+    <Parameter Name="pubkey" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_SEL_PUBLIC_ENCRYPT_NHANVIEN" Method="SP_SEL_PUBLIC_ENCRYPT_NHANVIEN">
+    <Parameter Name="tendn" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="matkhau" Type="System.Data.Linq.Binary" DbType="VarBinary(8000)" />
+    <ElementType Name="SP_SEL_PUBLIC_ENCRYPT_NHANVIENResult">
+      <Column Name="MANV" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LUONG" Type="System.Data.Linq.Binary" DbType="VarBinary(8000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

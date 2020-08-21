@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DbQLSVNhom">
+  <DataContextMoniker Name="/DbQLSVNhomDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c0af894a-20b6-437f-adbd-41f16c39e4b7" absoluteBounds="0.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DbQLSVNhomDataContext/SINHVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec592cb8-193b-4d40-9e51-5ced6d806377" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b86069f7-4555-4545-b9d0-157d30679939" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DbQLSVNhomDataContext/BANGDIEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eafcb342-c995-4c89-ac19-a5a038857a90" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d2ae4b6-2305-4e0d-b6fc-a67c655bf240" absoluteBounds="0.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DbQLSVNhomDataContext/HOCPHAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61034c8a-880b-4c83-bb9f-de5e5ebd2109" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4fc7fb7c-7a9e-4d89-bf47-bd073745ef35" absoluteBounds="3.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DbQLSVNhomDataContext/LOP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd588b62-200c-47a1-aa83-018952e38279" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d93eb3a-f071-4468-a0c3-c2c776475dc5" absoluteBounds="7, 2.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DbQLSVNhomDataContext/NHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94d258e9-cf94-4f4f-af52-fb66d99560d4" absoluteBounds="7.015, 2.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
